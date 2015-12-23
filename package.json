@@ -1,7 +1,7 @@
 {
-  "name": "cordova-plugin-file",
+  "name": "stitch-cordova-plugin-file",
   "version": "3.0.0",
-  "description": "Cordova File Plugin",
+  "description": "Stitch Cordova File Plugin",
   "cordova": {
     "id": "cordova-plugin-file",
     "platforms": [
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apache/cordova-plugin-file"
+    "url": "https://github.com/stitchmedia/cordova-plugin-file"
   },
   "keywords": [
     "cordova",

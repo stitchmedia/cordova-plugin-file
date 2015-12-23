@@ -311,7 +311,7 @@ NSString* const kCDVFilesystemURLPrefix = @"cdvfile";
 
     // Get the Library directory path
     NSArray* paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    self.appLibraryPath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"files"];
+    self.appLibraryPath = [paths objectAtIndex:0];
 
     // Get the Temporary directory path
     self.appTempPath = [NSTemporaryDirectory()stringByStandardizingPath];   // remove trailing slash from NSTemporaryDirectory()
@@ -319,7 +319,7 @@ NSString* const kCDVFilesystemURLPrefix = @"cdvfile";
     // Get the Documents directory path
     paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     self.rootDocsPath = [paths objectAtIndex:0];
-    self.appDocsPath = [self.rootDocsPath stringByAppendingPathComponent:@"files"];
+    self.appDocsPath = self.rootDocsPath;
 
 
     NSString *location = nil;
